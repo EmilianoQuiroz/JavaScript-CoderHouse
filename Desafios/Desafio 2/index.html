@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2 - Calculadora</title>
+</head>
+<body>
+    <main>
+        <h2>Calculadora basica utilizando funciones</h2>
+    </main>
+    <form id="formulario-id">
+        <label>Numero 1: </label>
+        <input type="number" id="primer-valor" autofocus placeholder="Digite un numero">
+        <button onclick="limpiar();">Limpiar campos</button>
+
+        <br>
+        <br>
+
+        <label>Numero 2: </label>
+        <input type="number" id="segundo-valor" autofocus placeholder="Digite otro numero">
+    
+        <br>
+        <br>
+
+        <button type="button" onclick="suma();">Sumar</button>
+        <button type="button" onclick="resta();">Restar</button>
+        <button type="button" onclick="multiplicar();">Multicar</button>
+        <button type="button" onclick="dividir();">Dividir</button>
+
+        <p>El resultado es: <span id="el-resultado"></span></p>
+    </form>
+
+
+    <script src="mina.js"></script>
+</body>
+</html>
