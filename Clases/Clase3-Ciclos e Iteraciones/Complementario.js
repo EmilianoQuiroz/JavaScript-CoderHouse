@@ -67,3 +67,74 @@ necesitamos que bajo cierta condición, el ciclo
 saltee esa repetición y siga con la próxima. Para 
 eso se utiliza la sentencia continue.
 */
+
+//--- ESTRUCTURA WHILE ---//
+/*
+La estructura while permite crear bucles que se ejecutan 
+cero o más veces, dependiendo de la condición indicada.
+El funcionamiento del bucle while se resume en: mientras 
+se cumpla la condición indicada, repite las instrucciones 
+incluidas dentro del bucle.
+Cuando usamos while, asumimos que en algún momento la 
+repetición va a finalizar; si la comparación no se realiza 
+adecuadamente podemos generar el llamado “bucle infinito”
+*/
+//--- EJEMPLO APLICADO WHILE: ESC ---//
+
+// let entrada = prompt("Ingresar un dato");
+    
+//     //Repetimos con While hasta que el usuario ingresa "ESC"
+// while(entrada != "ESC" ){
+    
+//     alert("El usuario ingresó "+ entrada);
+//         //Volvemos a solicitar un dato. En la próxima iteración se evalúa si no es ESC.
+    
+//         entrada = prompt("Ingresar otro dato");
+// }
+
+//--- ESTRUCTURA DO WHILE ---//
+/*
+La estructura do...while permite crear bucles que se 
+ejecutan una o más veces, dependiendo de la condición 
+indicada.
+A diferencia de while, garantiza que el bloque de código 
+se interpreta al menos una vez, porque la condición se 
+evalúa al final.
+*/
+//--- EJEMPLO APLICADO DO...WHILE: N° ---//
+
+// let numero = 0;
+// do{
+//    //Repetimos con do...while mientras el usuario ingresa un n°
+//    numero = prompt("Ingresar Número");
+//    console.log(numero);
+// //Si el parseo no resulta un número se interrumpe el bucle.   
+// }while(parseInt(numero));
+
+//--- SWITCH ---//
+/*
+La estructura switch  está especialmente diseñada para 
+manejar de forma sencilla múltiples condiciones sobre 
+la misma variable (técnicamente se podría resolver con 
+un if, pero el uso de switch es más ordenado). 
+Su definición formal puede parecer confusa, pero 
+veamos un ejemplo para entender su simpleza.
+*/
+
+//--- EJEMPLO SWITCH ---//
+
+const cuentaDeBanco = prompt('Que banco tenes?');
+let deudaAPagar = 1000;
+
+switch(cuentaDeBanco){
+    case "Santander Rio":
+        deudaAPagar = deudaAPagar - (deudaAPagar * 0.2);
+        break;
+    case "Galicia":
+        deudaAPagar = deudaAPagar - (deudaAPagar * .5);
+        break;
+    default:
+        deudaAPagar = deudaAPagar * 2;
+        break;
+}
+alert(`Total: ${deudaAPagar}`)
