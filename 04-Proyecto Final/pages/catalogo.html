@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Shop</title>
+</head>
+
+
+<body class="body-catalogo">
+
+    <nav class="animate__animated animate__fadeInDown navDesktop">
+        <div class="logo animate__animated animate__jackInTheBox">
+            <a href="../index.html"><img src="../assets/img/logo.png" alt=""></a>
+        </div>
+        <ul class="ocultar">
+            <a href="./catalogo.html"><li class="botonActivo">Shop</li></a>
+            <a href="#havanna"><li class="botonMarca">Havanna</li></a>
+            <a href="#martinez"><li class="botonMarca">Martinez</li></a>
+            <a href="#starbucs"><li class="botonMarca">Starbucs</li></a>
+            <a href="#juanvaldez"><li class="botonMarca">J. valdez</li></a>
+            <!-- <a href="contacto.html"><li class="botonMarca">Contactanos</li></a> -->
+        </ul>
+        <div class="buscadorCarrito">
+            <div class="buscador animate__animated animate__fadeInDown">
+                <i class='bx bx-search-alt-2 iconoBuscador'></i>
+                <input type="text" placeholder="Buscar" class="buscadorTexto">
+            </div>
+
+            <div class="logoCarrito">
+                <i id="abrirCarrito" class='bx bx-cart-download animate__animated animate__fadeInDown iconoCarrito-catalogo'></i>
+                <h3 id="contadorCarrito"></h3>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <div class="carrito"  id="carrito">
+        
+            <div class="tuCarrito">
+                <h3>Tu carrito de compras</h3>
+                <i class='bx bx-x-circle' id="cerrarCarrito"></i>
+            </div>
+    
+            <div class="productosCarrito" id="productosCarrito">
+                
+            </div>
+    
+            <div class="totalConfirmar" id="totalConfirmar">
+                
+            </div>
+    
+        </div>
+    </div>
+
+    <main>
+
+        <section class="seccionProductos animate__animated animate__fadeInDown">
+
+            <h4 class="tituloProductos">Productos destacados</h4>
+
+            <div class="productos" id="productos">
+                
+            </div>
+
+
+        </section>
+
+        <section class="seccionProductos animate__animated animate__fadeInDown">
+            <a href="" name="havanna"></a>
+            <h4 class="tituloProductos">Havanna</h4>
+
+            <div class="productos" id="productosHavanna">
+                
+            </div>
+
+
+        </section>
+
+        <section class="seccionProductos animate__animated animate__fadeInDown">
+            <a href="" name="martinez"></a>
+            <h4 class="tituloProductos">Café Martinez</h4>
+
+            <div class="productos" id="productosMartinez">
+                
+            </div>
+
+
+        </section>
+
+        <section class="seccionProductos animate__animated animate__fadeInDown">
+            <a href="" name="starbucs"></a>
+            <h4 class="tituloProductos">Starbucks</h4>
+
+            <div class="productos" id="productosStarbucs">
+                
+            </div>
+
+
+        </section>
+
+        <section class="seccionProductos animate__animated animate__fadeInDown" >
+            <a href="" name="juanvaldez"></a>
+            <h4 class="tituloProductos">Juan Valdez</h4>
+
+            <div class="productos" id="productosJuanValdez">
+                
+            </div>
+
+
+        </section>
+
+    </main>
+
+<!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer_container">
+            <div class="footer_row">
+                <div class="footer_col">
+                    <h4>Tienda Café</h4>
+                    <ul>
+                        <li><a href="#">Havanna</a></li>
+                        <li><a href="#">Martinez</a></li>
+                        <li><a href="#">Starbucks</a></li>
+                        <li><a href="#">J. Valdez</a></li>
+                    </ul>
+                </div>
+                <div class="footer_col">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Franquicias</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="#">Estado de Orden</a></li>
+                    </ul>
+                </div>
+                <div class="footer_col">
+                    <h4>Tienda online</h4>
+                    <ul>
+                        <li><a href="#">Café en grano</a></li>
+                        <li><a href="#">Café molido</a></li>
+                        <li><a href="#">Exoticos</a></li>
+                        <li><a href="#">De especialidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer_col">
+                    <h4>Seguinos</h4>
+                    <div class="redes_sociales">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>         
+
+
+
+
+
+

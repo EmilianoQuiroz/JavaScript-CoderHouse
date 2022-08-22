@@ -1,0 +1,63 @@
+
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar:vertical {
+    width:7px;
+}
+
+body::-webkit-scrollbar-button:increment ,.body::-webkit-scrollbar-button {
+    display: none;
+} 
+
+body::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(255, 166, 0, 0);        
+  }
+
+body::-webkit-scrollbar-thumb {
+    background-color: #036635;
+    border-radius: 30px;
+    border: 2px solid #036635;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+//DESTACADOS
+
+.tarjetas::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.tarjetas::-webkit-scrollbar:vertical {
+    width:7px;
+}
+
+.tarjetas::-webkit-scrollbar-button:increment ,.body::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.tarjetas::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.tarjetas::-webkit-scrollbar-track {
+    background: rgba(255, 166, 0, 0);        /* color of the tracking area */
+}
+
+.tarjetas::-webkit-scrollbar-thumb {
+    background-color: #036635;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.tarjetas::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
